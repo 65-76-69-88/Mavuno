@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: coffee-sale-companion
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run assets:fetch && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.1
+      - key: DATA_DIR
+        value: ./data
+      - key: REVIEWER_SECRET
+        generateValue: true

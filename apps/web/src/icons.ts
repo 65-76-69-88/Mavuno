@@ -1,0 +1,21 @@
+/** Import only used icons so the build does not traverse the complete icon catalog. */
+export { default as ArrowLeft } from 'lucide-react/dist/esm/icons/arrow-left.js';
+export { default as ArrowRight } from 'lucide-react/dist/esm/icons/arrow-right.js';
+export { default as Check } from 'lucide-react/dist/esm/icons/check.js';
+export { default as CheckCircle2 } from 'lucide-react/dist/esm/icons/circle-check.js';
+export { default as ChevronDown } from 'lucide-react/dist/esm/icons/chevron-down.js';
+export { default as CloudUpload } from 'lucide-react/dist/esm/icons/cloud-upload.js';
+export { default as Download } from 'lucide-react/dist/esm/icons/download.js';
+export { default as FileImage } from 'lucide-react/dist/esm/icons/file-image.js';
+export { default as FileText } from 'lucide-react/dist/esm/icons/file-text.js';
+export { default as Info } from 'lucide-react/dist/esm/icons/info.js';
+export { default as Leaf } from 'lucide-react/dist/esm/icons/leaf.js';
+export { default as LoaderCircle } from 'lucide-react/dist/esm/icons/loader-circle.js';
+export { default as LockKeyhole } from 'lucide-react/dist/esm/icons/lock-keyhole.js';
+export { default as LogOut } from 'lucide-react/dist/esm/icons/log-out.js';
+export { default as RefreshCw } from 'lucide-react/dist/esm/icons/refresh-cw.js';
+export { default as ShieldCheck } from 'lucide-react/dist/esm/icons/shield-check.js';
+export { default as Upload } from 'lucide-react/dist/esm/icons/upload.js';
+export { default as Wifi } from 'lucide-react/dist/esm/icons/wifi.js';
+export { default as WifiOff } from 'lucide-react/dist/esm/icons/wifi-off.js';
+export { default as X } from 'lucide-react/dist/esm/icons/x.js';

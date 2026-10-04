@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "encoderVersion": "Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8",
+  "preprocessingVersion": "evidence-text-v4",
+  "adapterVersion": "baseline-adapter-702cc37cfd91cac6",
+  "trainingStatus": "baseline",
+  "files": [
+    {
+      "path": "learned-groups.json",
+      "decodedBytes": 55313,
+      "sha256": "8168c7ded63d3d00395ee890f69e1e2f4112d50081eb8791c683e0d212364279",
+      "purpose": "synthetic server publication and reproducibility; never served as a browser asset",
+      "synthetic": true
+    },
+    {
+      "path": "embedding-cache.json",
+      "decodedBytes": 2086914,
+      "sha256": "e46a97f5fb8ea8415655b274f1a9a86617696d3e731e92dd4753f7101ba13c38",
+      "purpose": "synthetic server publication and reproducibility; never served as a browser asset",
+      "synthetic": true
+    },
+    {
+      "path": "training-report.json",
+      "decodedBytes": 114226,
+      "sha256": "17202857c745a22395765000b57a5f6acd9a10472bcbb367bbcc6b678f26e019",
+      "purpose": "synthetic server publication and reproducibility; never served as a browser asset",
+      "synthetic": true
+    },
+    {
+      "path": "split-label-manifest.json",
+      "decodedBytes": 592,
+      "sha256": "414f59335d12a755111ab120eb0e3c3f9df5170816e02e6e122e0b4c7d4cfe34",
+      "purpose": "synthetic server publication and reproducibility; never served as a browser asset",
+      "synthetic": true
+    },
+    {
+      "path": "candidate-adapter.f32",
+      "decodedBytes": 1536,
+      "sha256": "14961661a7348c992e0968f9c45a88d03297f1c851c6998174940b7089556a35",
+      "purpose": "synthetic server publication and reproducibility; never served as a browser asset",
+      "synthetic": true
+    }
+  ],
+  "limitations": [
+    "The synthetic embedding cache contains individual fictional source records and must remain outside the web static directory.",
+    "No foundation-model weights are included. Fetch the pinned local encoder separately.",
+    "Python/PyTorch is needed to reproduce training, not to run the published service."
+  ]
+}

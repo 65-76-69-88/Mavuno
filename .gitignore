@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+data/
+generated/
+apps/web/public/models/
+apps/web/public/runtime/
+apps/web/public/asset-registry.json
+test-results/
+playwright-report/
+output/
+__pycache__/
+*.sqlite*
+*.log
+.venv/
+.cache/

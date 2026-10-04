@@ -1,0 +1,25 @@
+{
+  "sourceHash": "e91c96219450c93ec258aa957f31a7c3cd84ae69fbc787c499b68364056e3112",
+  "labelHash": "ed928ac5705adf4c3e64cef09b2ebd79921d664bc52bdd7f4cb40956f3482529",
+  "generatorRevision": "evidence-corpus-v2",
+  "splits": {
+    "train": {
+      "records": 128,
+      "triplets": 285,
+      "contributors": 32
+    },
+    "dev": {
+      "records": 24,
+      "triplets": 66,
+      "contributors": 8
+    },
+    "test": {
+      "records": 24,
+      "triplets": 65,
+      "contributors": 8
+    }
+  },
+  "independentReview": false,
+  "synthetic": true,
+  "reviewStatus": "synthetic_unreviewed"
+}

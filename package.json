@@ -1,0 +1,60 @@
+{
+  "name": "agriculture-comparison-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "dev:web": "vite --host 127.0.0.1",
+    "dev:server": "tsx watch apps/server/src/index.ts",
+    "assets:fetch": "tsx scripts/fetch-assets.ts",
+    "assets:prepare": "tsx scripts/prepare-prototypes.ts",
+    "train": "tsx scripts/run-training.ts",
+    "evaluate": "tsx tests/evaluation/run.ts",
+    "release:package": "tsx scripts/package-release.ts",
+    "setup": "npm run assets:fetch && npm run assets:prepare",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:browser": "playwright test",
+    "build": "npm run typecheck && vite build && node scripts/finalize-web.mjs && node scripts/build-server.mjs",
+    "start": "node dist/server/index.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "better-sqlite3": "12.4.1",
+    "compression": "1.8.1",
+    "decimal.js": "10.6.0",
+    "dotenv": "17.2.3",
+    "express": "5.1.0",
+    "idb": "8.0.3",
+    "lucide-react": "0.468.0",
+    "multer": "2.4.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "zod": "3.25.76"
+  },
+  "overrides": {
+    "sharp": "0.35.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.1",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/compression": "1.8.1",
+    "@types/express": "5.0.3",
+    "@types/multer": "2.0.0",
+    "@types/node": "22.18.8",
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "@types/supertest": "6.0.3",
+    "@vitejs/plugin-react": "5.0.4",
+    "esbuild": "0.25.10",
+    "supertest": "7.1.4",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.11"
+  }
+}
